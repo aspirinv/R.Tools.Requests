@@ -7,14 +7,17 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>$(AssemblyName)</Authors>
     <Company>$(AssemblyName)</Company>
-    <AssemblyVersion>9.0.3</AssemblyVersion>
+    <AssemblyVersion>9.0.5</AssemblyVersion>
 	<FileVersion>$(AssemblyVersion)</FileVersion>
 	<Version>$(AssemblyVersion)</Version>
+	
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
-
-<ItemGroup>
+	
+  <ItemGroup>
 	<FrameworkReference Include="Microsoft.AspNetCore.App" />
-</ItemGroup>
+  </ItemGroup>
 	
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
@@ -32,9 +35,10 @@
   </ItemGroup>
 	
   <ItemGroup>
-    <None Update="README.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+	<None Include="..\README.md" Link="README.md"  Pack="true" PackagePath="README.md" >
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
   </ItemGroup>
 
 </Project>

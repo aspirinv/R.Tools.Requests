@@ -1,4 +1,4 @@
-﻿# RequestLoggingMiddleware.MongoDB
+﻿# Request Logging Middleware
 
 A lightweight ASP.NET Core middleware to log incoming HTTP request data (including JSON body). Easily integrable into your application and distributable via NuGet.
 
@@ -117,5 +117,5 @@ MIT License
 
 -   [NuGet Package](https://www.nuget.org/packages/R.Tools.Requests)
     
--   [GitHub Repository](https://github.com/your-org/RequestLoggingMiddleware.MongoDB)
+-   [GitHub Repository](https://github.com/aspirinv/R.Tools.Requests)
     
